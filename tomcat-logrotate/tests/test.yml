@@ -5,13 +5,7 @@
     logrotate_scripts:
       - name: tomcat-logrotate
         paths:
-          - /var/log/pki/pki-tomcat/catalina.*.log
-          - /var/log/pki/pki-tomcat/host-manager.*.log
-          - /var/log/pki/pki-tomcat/localhost.*.log
-          - /var/log/pki/pki-tomcat/localhost_access_log.*.log
-          - /var/log/pki/pki-tomcat/manager.*.log
-          - /var/log/pki/pki-tomcat/pki/debug.*.log
-          - /var/log/pki/pki-tomcat/ca/debug.*.log
+          - /home/ubuntu/var/log/pki/pki-tomcat/catalina.*.log
         options:
           - missingok
           - notifempty
